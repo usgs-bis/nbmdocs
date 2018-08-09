@@ -5,6 +5,7 @@ USGS National Biogeographic Map
    :maxdepth: 2
 
    history
+   bis
    baps
    devmethods
 
