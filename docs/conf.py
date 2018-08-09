@@ -49,7 +49,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'National Biogeographic Map'
-copyright = '2018, Sky Bristol'
+copyright = ''
 author = 'Sky Bristol'
 
 # The version info for the project you're documenting, acts as replacement for
