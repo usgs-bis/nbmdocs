@@ -8,6 +8,7 @@ USGS National Biogeographic Map
    bis
    baps
    devmethods
+   references
 
 
 
