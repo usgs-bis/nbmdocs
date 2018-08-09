@@ -1,3 +1,5 @@
+.. _baps:
+
 Biogeographic Analysis Packages
 *******************************
 
@@ -74,4 +76,4 @@ We are working to combine the foundational scientific method with Test Driven De
 Inputs
 ~~~~~~
 
-While there are a number of additional labels (elements of Analysis Packages) that we will likely get into over time, we are starting with the inputs to the analysis as one key aspect that needs immediate attention. Inputs in this sense come down to the data sources, algorithms, theories, and other necessary ingredients for an analysis to be conducted. We focus on these at this stage in our development, because the inputs will be a major source of scrutiny in identifying new elements that need to be incorporated into the :ref:`bis`..
+While there are a number of additional labels (elements of Analysis Packages) that we will likely get into over time, we are starting with the inputs to the analysis as one key aspect that needs immediate attention. Inputs in this sense come down to the data sources, algorithms, theories, article citations, and other necessary ingredients for an analysis to be conducted. We focus on these at this stage in our development, because the inputs will be a major source of scrutiny in identifying new elements that need to be incorporated into the :ref:`bis`. Eventually, we will provide a small range of options for how a package identifies its inputs in a way that can be clearly examined by humans and algorithms, but in the near term we will allow for lots of heterogeneity and will use the "Inputs" issue label as a way to identify discussion.
