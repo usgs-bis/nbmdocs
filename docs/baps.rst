@@ -46,7 +46,7 @@ The purpose of the labels is to flag issues about a particular aspect of the ana
 * Someone else from the team may raise an issue during a solicited or extemporaneous review
 * As we get more sophisticated, we may write algorithms that are able to introspect an analysis package, look for particular characteristics, and then raise issues for discussion and resolution.
 
-Eventually, we hope to get more sophisticated in how we use this process and iteratively develop our analyses. In the near term we will be looking for a couple of things (either as team members or in our softward codes) with regard to issues and labels.
+Eventually, we hope to get more sophisticated in how we use this process and iteratively develop our analyses. In the near term we will be looking for a couple of things (either as team members or in our software codes) with regard to issues and labels.
 
 * The complete lack of any issues with the labels in our list means that the topic has not even been raised, indicating a lower level of capability maturity.
 * Issues raised with the labels but unresolved mean that the issue has at least come up but not yet been brought to a satisfactory conclusion.
