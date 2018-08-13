@@ -4,21 +4,11 @@ USGS National Biogeographic Map
 .. toctree::
    :maxdepth: 2
 
-   history
    bis
    baps
    devmethods
+   history
    references
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
 
 Overview
 ==========

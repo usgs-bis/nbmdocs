@@ -41,11 +41,30 @@
           <div class="body" role="main">
             
   <div class="section" id="biogeographic-information-system">
-<span id="bis"></span><h1>Biogeographic Information System<a class="headerlink" href="#biogeographic-information-system" title="Permalink to this headline">¶</a></h1>
+<span id="bis"></span><h1><a class="toc-backref" href="#id2">Biogeographic Information System</a><a class="headerlink" href="#biogeographic-information-system" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#biogeographic-information-system" id="id2">Biogeographic Information System</a><ul>
+<li><a class="reference internal" href="#registries" id="id3">Registries</a><ul>
+<li><a class="reference internal" href="#spatial-feature-registry" id="id4">Spatial Feature Registry</a></li>
+<li><a class="reference internal" href="#taxa-information-registry" id="id5">Taxa Information Registry</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#libraries" id="id6">Libraries</a><ul>
+<li><a class="reference internal" href="#data-reference-library" id="id7">Data Reference Library</a></li>
+<li><a class="reference internal" href="#research-reference-library" id="id8">Research Reference Library</a></li>
+<li><a class="reference internal" href="#software-reference-library" id="id9">Software Reference Library</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
 <p>The Biogeographic Information System (BIS) is the underlying cyberinfrastructure we are building behind the National Biogeographic Map. It is a set of software codes and information components being contributed to the broader Modular Science Framework vision of the USGS <a class="reference internal" href="references.html#csssciencestrategy" id="id1">[CSSScienceStrategy]</a>. We are also borrowing heavily from ideas pioneered with the Global Change Information System (<a class="reference external" href="http://data.globalchange.gov">GCIS</a>) in terms of a foundational information system that is semantically as well as syntactically intelligent and takes the idea of full traceability seriously.</p>
 <p>A brief description of the components that we will reference throughout this documentation is provided below, and we’ll be getting around to better documenting these subsystems in future.</p>
 <div class="section" id="registries">
-<h2>Registries<a class="headerlink" href="#registries" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id3">Registries</a><a class="headerlink" href="#registries" title="Permalink to this headline">¶</a></h2>
 <p>Much of the information we need to make sense of and work with in the BIS comes from other established sources that we reach out and assimilate in a way that makes sense for what we’re trying to accomplish. We call these “registries” because they essentially start with a process of registering a set of source material in a way we can write code against to build out what we need. Registrants often start with a file or some pointer to an online data service. They are often heterogeneous and may not have very complete metadata directly on board. In all cases so far, we are using <a class="reference external" href="https://www.sciencebase.gov">ScienceBase</a> as our initial point of registration, taking advantage of a few key capabilities:</p>
 <ul class="simple">
 <li>Flexible information model that lets us define what we want to record about a registrant in a fairly simple way</li>
@@ -54,28 +73,28 @@
 <li>Reasonably robust API for us to write code against to process registrant content into what we need</li>
 </ul>
 <div class="section" id="spatial-feature-registry">
-<h3>Spatial Feature Registry<a class="headerlink" href="#spatial-feature-registry" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Spatial Feature Registry</a><a class="headerlink" href="#spatial-feature-registry" title="Permalink to this headline">¶</a></h3>
 <p>Much of our work involves spatial analysis that runs analytics for a set of areas of interest, allowing us to report on the status of biodiversity and various stressors in a variety of ways. Some of the things we register and process are spatial frameworks based on hydrography or ecology and others are more human-centered like political boundaries of different types. While there are lots of reasonable sources for this kind of information, no one of them serves all our needs, and so we built a registry function to identify the best sources that make sense for our work and run code to pull them all together into something cohesive. Right now, our focus is on assembling certain areas of interest into a common index, complete with full geometry where we have it, that can serve as a place name lookup capability. This will then be used to either send geometry off to spatial processors for live analytics or send identifiers of one kind of another to other services to return pre-calculated metrics. These will drive BAPs in our next iteration of the National Biogeographic Map.</p>
 <p>ScienceBase Collection: <a class="reference external" href="https://www.sciencebase.gov/catalog/item/55fafaf5e4b05d6c4e501b81">https://www.sciencebase.gov/catalog/item/55fafaf5e4b05d6c4e501b81</a></p>
 <p>Note: The ScienceBase SFR collection currently has a bunch of cruft and experimental stuff in it, so bear with us while we do some housekeeping.</p>
 </div>
 <div class="section" id="taxa-information-registry">
-<h3>Taxa Information Registry<a class="headerlink" href="#taxa-information-registry" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Taxa Information Registry</a><a class="headerlink" href="#taxa-information-registry" title="Permalink to this headline">¶</a></h3>
 <p>We also do a bunch of our work with information about species (and other levels of the taxonomic tree). We needed a place where we could assemble relevant information needed in our work that helps to make sense across a bunch of disparate sources. This information includes stuff from taxonomic authorities about taxonomy, but also includes species trait information, regulatory context, judgment calls from different groups about conservation status, and other details that are never all in one place. We also need a way to keep versions of information from these different sources over time as we build decision analysis capabilities so that stakeholders who use our information can count on us to get back to previous results we’ve presented.</p>
 <p>As we’ve worked through this and other registry concepts, we’ve come to determine that the TIR is more about a process that produces purpose-built data for use (and keeps track of what it does over time) rather than a giant database. Each species list of interest comes from a particular context, and the rules in that context to things like what taxonomic authorities to consult or how to create meaningful linkages to potential connected information will vary from another context. The first real exposure of the resulting data in the TIR concept will be through our BIS API, though you can see one end result in the web app for the <a class="reference external" href="https://www1.usgs.gov/csas/swap/">State Species of Greatest Conservation Need</a>.</p>
 </div>
 </div>
 <div class="section" id="libraries">
-<h2>Libraries<a class="headerlink" href="#libraries" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id6">Libraries</a><a class="headerlink" href="#libraries" title="Permalink to this headline">¶</a></h2>
 <p>Coming soon…</p>
 <div class="section" id="data-reference-library">
-<h3>Data Reference Library<a class="headerlink" href="#data-reference-library" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id7">Data Reference Library</a><a class="headerlink" href="#data-reference-library" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="research-reference-library">
-<h3>Research Reference Library<a class="headerlink" href="#research-reference-library" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id8">Research Reference Library</a><a class="headerlink" href="#research-reference-library" title="Permalink to this headline">¶</a></h3>
 </div>
 <div class="section" id="software-reference-library">
-<h3>Software Reference Library<a class="headerlink" href="#software-reference-library" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">Software Reference Library</a><a class="headerlink" href="#software-reference-library" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 </div>
@@ -105,6 +124,8 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="baps.html">Biogeographic Analysis Packages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="devmethods.html">Development Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devmethods.html#philosophy">Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devmethods.html#practical">Practical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References Cited</a></li>
 </ul>
 
