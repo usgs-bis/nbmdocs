@@ -3,6 +3,8 @@
 Biogeographic Analysis Packages
 *******************************
 
+.. contents:: Table of Contents
+
 Overview
 ========
 

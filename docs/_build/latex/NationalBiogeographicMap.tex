@@ -54,7 +54,7 @@
 
 
 \title{National Biogeographic Map Documentation}
-\date{Aug 11, 2018}
+\date{Aug 13, 2018}
 \release{2.0.1}
 \author{Sky Bristol}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -70,10 +70,10 @@
 
 
 \chapter{History of the National Biogeographic Map}
-\label{\detokenize{history:usgs-national-biogeographic-map}}\label{\detokenize{history::doc}}\label{\detokenize{history:history-of-the-national-biogeographic-map}}
+\label{\detokenize{history:history-of-the-national-biogeographic-map}}\label{\detokenize{history:usgs-national-biogeographic-map}}\label{\detokenize{history::doc}}
 
 \chapter{Biogeographic Information System}
-\label{\detokenize{bis:bis}}\label{\detokenize{bis::doc}}\label{\detokenize{bis:biogeographic-information-system}}
+\label{\detokenize{bis:biogeographic-information-system}}\label{\detokenize{bis:bis}}\label{\detokenize{bis::doc}}
 The Biogeographic Information System (BIS) is the underlying cyberinfrastructure we are building behind the National Biogeographic Map. It is a set of software codes and information components being contributed to the broader Modular Science Framework vision of the USGS \phantomsection\label{\detokenize{bis:id1}}{\hyperref[\detokenize{references:csssciencestrategy}]{\sphinxcrossref{{[}CSSScienceStrategy{]}}}}. We are also borrowing heavily from ideas pioneered with the Global Change Information System (\sphinxhref{http://data.globalchange.gov}{GCIS}) in terms of a foundational information system that is semantically as well as syntactically intelligent and takes the idea of full traceability seriously.
 
 A brief description of the components that we will reference throughout this documentation is provided below, and we’ll be getting around to better documenting these subsystems in future.
@@ -231,10 +231,48 @@ We are working to combine the foundational scientific method with Test Driven De
 While there are a number of additional labels (elements of Analysis Packages) that we will likely get into over time, we are starting with the inputs to the analysis as one key aspect that needs immediate attention. Inputs in this sense come down to the data sources, algorithms, theories, article citations, and other necessary ingredients for an analysis to be conducted. We focus on these at this stage in our development, because the inputs will be a major source of scrutiny in identifying new elements that need to be incorporated into the {\hyperref[\detokenize{bis:bis}]{\sphinxcrossref{\DUrole{std,std-ref}{Biogeographic Information System}}}}. Eventually, we will provide a small range of options for how a package identifies its inputs in a way that can be clearly examined by humans and algorithms, but in the near term we will allow for lots of heterogeneity and will use the “Inputs” issue label as a way to identify discussion.
 
 
-\chapter{Development Methods}
-\label{\detokenize{devmethods:development-methods}}\label{\detokenize{devmethods:devmethods}}\label{\detokenize{devmethods::doc}}
-Coming soon…
+\chapter{Development Methods: Philosophy}
+\label{\detokenize{devmethods:devmethods}}\label{\detokenize{devmethods:development-methods-philosophy}}\label{\detokenize{devmethods::doc}}
+Scientific analysis can be done in a wide variety of ways using many different tools. We expect that the analyses that we “adopt” or consider to be part of our Biogeographic Information System framework as {\color{red}\bfseries{}{}`baps{}`\_} will be developed in a variety of different tools, using a variety of methods and techniques, and resulting in many different ways of looking at problems of interest. However, we do see the need to develop, test, and refine a set of core principles, approaches, and overarching methods that we will adopt across the board. These should put some useful sideboards on our work, providing the basic mechanics for how certain things are done so that we can all concentrate on the more important substance of the scientific analytical work itself.
 
+
+\section{Shareable Code}
+\label{\detokenize{devmethods:shareable-code}}
+We do feel strongly that all of our analyses need to be in the form of shareable code. Other people need to see exactly what we are doing and an instantiation of our scientific thought process both to provide transparency into our methods and sources and to help accelerate the pace of new analytical work by providing ready building blocks. The code can be in many different forms and languages, but it needs to be in some form that can be shared with others.
+
+
+\section{Buildable Code}
+\label{\detokenize{devmethods:buildable-code}}
+Code can be shareable without being particularly buildable; we want our code to be buildable by others. What we mean by buildable is the ability to quickly pick up one set of code or a particular algorithm within code and use it to build something else. If there are dependencies within a Biogeographic Analysis Package that are out of reach for someone, then that package is not buildable. We will work on methods and practices across our various coding platforms and traditions to instantiate clear indications of requirements within our Analysis Packages, ensuring through testing that they can all be met by someone interested in building on what we’ve done.
+
+
+\section{“Contributability”}
+\label{\detokenize{devmethods:contributability}}
+Analysis Packages are not just made up of core scientific code doing the actual analysis. They also have documentation, conversation, helper functions, and data management. Our intent is to operate a platform that accepts and celebrates all of these contributions. Below are a few thoughts on how we are working for these specific types of contributions to play out in practice.
+
+
+\subsection{Documentation}
+\label{\detokenize{devmethods:documentation}}
+Documentation for an Analysis Package happens at a number of levels. There are core metadata that describe the purpose of an analysis and provide instructions for use. There may be additional documents that help to further understand the analysis, how it can be used, and perhaps how it should not be used. There are also inline comments within the code that help to understand how certain functions are meant to perform or what a workflow entails. Our intent is that documentation of our analyses is a team effort, with multiple people from across our group able to jump in and help work on the documentation for any analysis.
+
+
+\subsection{Conversation}
+\label{\detokenize{devmethods:conversation}}
+The very nature of science is that it is always in flux. Our understanding of anything at any given time is always incomplete, waiting for the next discovery or perspective to disrupt and further previous understanding. We expect our Analysis Packages to capture and foster ongoing conversation within and beyond our team, and with both other scientists and resource management stakeholders. We will work on ways to make these conversations as productive as possible by keeping them pointed toward specific aspects of our analyses. We will make best use of available technologies over time such as issue tracking in GitHub and GitLab to make the conversation a core part of the overall analytical record.
+
+
+\subsection{Helper Functions}
+\label{\detokenize{devmethods:helper-functions}}
+The nature of building scientific software or any type of code is one of putting building blocks together. These can be in the form of Python Packages or R Libraries or any number of other types of packaging. We use libraries from the larger community and from within our own group. We’ve already seen the need to start developing specific packages of functions in common across the Biogeographic Information System and have launched the pyBIS project to contain one form of these functions for common use. As we develop each of our Analysis Packages, we will look for opportunities to improve upon or build new tools into our overall toolbox in an appropriate language. We will strive for a healthy iterative approach where the lead author of a particular analysis may flag some part of their code for further examination by someone else on the team with the expertise to build out a particular function in the best way possible.
+
+
+\subsection{Data Management}
+\label{\detokenize{devmethods:data-management}}
+One of the key aspects of making buildable code is to make the leap from offline to online data. If a set of analytical code has references to data sitting on the lead author’s local machine, someone else can’t meet that particular dependency without somehow getting those same data onto their own local machine and then changing the path. Each of the data input dependencies to our analyses needs some level of careful examination to determine the best pathway for the data to be made accessible and long-lived so that the analysis is buildable and sustainable. The lead author may not always know the best way of getting this done, but there’s a good chance that someone else on our team will know how to take at least the first step.
+
+
+\chapter{Development Methods: Practical}
+\label{\detokenize{devmethods:development-methods-practical}}
 
 \chapter{References Cited}
 \label{\detokenize{references:references-cited}}\label{\detokenize{references::doc}}

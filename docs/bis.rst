@@ -3,6 +3,8 @@
 Biogeographic Information System
 ********************************
 
+.. contents:: Table of Contents
+
 The Biogeographic Information System (BIS) is the underlying cyberinfrastructure we are building behind the National Biogeographic Map. It is a set of software codes and information components being contributed to the broader Modular Science Framework vision of the USGS [CSSScienceStrategy]_. We are also borrowing heavily from ideas pioneered with the Global Change Information System (`GCIS <http://data.globalchange.gov>`_) in terms of a foundational information system that is semantically as well as syntactically intelligent and takes the idea of full traceability seriously.
 
 A brief description of the components that we will reference throughout this documentation is provided below, and we'll be getting around to better documenting these subsystems in future.
