@@ -2,13 +2,14 @@ USGS National Biogeographic Map
 *******************************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    bis
    baps
    devmethods
    history
    references
+   browse
 
 Overview
 ==========
