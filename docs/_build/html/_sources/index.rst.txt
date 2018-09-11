@@ -4,6 +4,7 @@ USGS National Biogeographic Map
 .. toctree::
    :maxdepth: 1
 
+   releasenotes
    bis
    baps
    devmethods
