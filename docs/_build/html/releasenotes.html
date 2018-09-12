@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>References Cited &mdash; National Biogeographic Map 2.0 documentation</title>
+  <title>Release Notes &mdash; National Biogeographic Map 2.0 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Browse Contents" href="browse.html" />
-    <link rel="prev" title="History of the National Biogeographic Map" href="history.html" /> 
+    <link rel="next" title="Biogeographic Information System" href="bis.html" />
+    <link rel="prev" title="USGS National Biogeographic Map" href="index.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -83,13 +83,16 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">Release Notes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#version-2-0">Version 2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#version-1-0">Version 1.0</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="bis.html">Biogeographic Information System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="baps.html">Biogeographic Analysis Packages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="devmethods.html">Development Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="history.html">History of the National Biogeographic Map</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">References Cited</a></li>
-<li class="toctree-l1"><a class="reference internal" href="browse.html">Browse Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References Cited</a></li>
 </ul>
 
             
@@ -135,13 +138,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>References Cited</li>
+      <li>Release Notes</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/references.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/releasenotes.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -154,20 +157,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="references-cited">
-<h1>References Cited<a class="headerlink" href="#references-cited" title="Permalink to this headline">¶</a></h1>
-<table class="docutils citation" frame="void" id="csssciencestrategy" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label">[CSSScienceStrategy]</td><td>Bristol, R.S., Euliss, N.H., Jr., Booth, N.L., Burkardt, Nina, Diffendorfer, J.E., Gesch, D.B., McCallum, B.E., Miller, D.M., Morman, S.A., Poore, B.S., Signell, R.P., and Viger, R.J., 2013, U.S. Geological Survey core science systems strategy—Characterizing, synthesizing, and understanding the critical zone through a modular science framework: U.S. Geological Survey Circular 1383–B, 33 p. <a class="reference external" href="https://pubs.usgs.gov/circ/1383b/">https://pubs.usgs.gov/circ/1383b/</a></td></tr>
-</tbody>
-</table>
-<table class="docutils citation" frame="void" id="usgsreorgfactsheet" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label">[USGSReorgFactSheet]</td><td>U.S. Geological Survey, 2010, Aligning USGS senior leadership structure with the USGS science strategy (ver. 7.0, November 23, 2010): U.S. Geological Survey Fact Sheet 2010–3066, 4 p., available only at <a class="reference external" href="https://pubs.usgs.gov/fs/2010/3066/">https://pubs.usgs.gov/fs/2010/3066/</a></td></tr>
-</tbody>
-</table>
+  <div class="section" id="release-notes">
+<span id="releasenotes"></span><h1>Release Notes<a class="headerlink" href="#release-notes" title="Permalink to this headline">¶</a></h1>
+<p>This page provides overview documentation of releases of the National Biogeographic Map. Detailed tallying of issues dealt with and features is evolving, and we’ll reference that from here as soon as we are able.</p>
+<div class="section" id="version-2-0">
+<h2>Version 2.0<a class="headerlink" href="#version-2-0" title="Permalink to this headline">¶</a></h2>
+<p>Version 2.0 is an almost complete redesign of the National Biogeographic Map concept. It removed a number of the features that were problematic in the Version 1.0 design such as the whole bioscape idea, focusing instead on a more sophisticated architecture for determining what BAPs are available at any given place and time. It introduced a place name lookup capability driven by an API based on the Spatial Feature Registry work. It also introduced a time period selection capability triggered by the availability of BAPs that take a time input control, giving us the ability to begin introducing BAPs that explore temporal as well as spatial data.</p>
+</div>
+<div class="section" id="version-1-0">
+<h2>Version 1.0<a class="headerlink" href="#version-1-0" title="Permalink to this headline">¶</a></h2>
+<p>This was the initial release of the National Biogeographic Map in July 2017. The interface for Version 1.0 was based heavily on the <a class="reference external" href="https://macrostrat.org/map/">Burwell</a> app from the Macrostrat project at University of Wisconsin. While not a direct fork of that app, it was heavily inspired by Burwell in overall layout and design. It featured the concept of a menu of data to put on the map, much like traditional web mappers, and a flyout panel on the right that we called a “Bioscape” (a composition of Biogeographic Analysis Packages for a given context like a spatial area of interest).</p>
+<p>Version 1.0 proved to help sell the overall idea of the National Biogeographic Map, but it had a number of limitations in terms of underlying architecture that made it difficult to scale up quickly to many more analysis packages. We also ran into the issue of users expecting it to behave like a traditional online mapper instead of centering focus on the analysis packages, which are the heart of the overall concept we are pursuing.</p>
+<p>One concept that we borrowed from Macrostrat’s Burwell was the “find-by-click” interface idea where the user clicks some area of interest on the map and a panel unfolds with all the information on that area. This is what launched our Bioscape construct of analysis packages. We introduced this initially with only Omernik Level III Ecoregions and Large Marine Ecosystems as available areas to examine. It was a nice device, but we suffered from needing something more sophisticated to let users choose from any number of areas to examine under their one mouse click and the need for some type of place name lookup functionality.</p>
+</div>
 </div>
 
 
@@ -178,10 +180,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="browse.html" class="btn btn-neutral float-right" title="Browse Contents" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="bis.html" class="btn btn-neutral float-right" title="Biogeographic Information System" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="history.html" class="btn btn-neutral" title="History of the National Biogeographic Map" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="USGS National Biogeographic Map" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

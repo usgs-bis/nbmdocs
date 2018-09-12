@@ -6,6 +6,7 @@ Browse Contents
 .. toctree::
    :maxdepth: 5
 
+   releasenotes
    bis
    baps
    devmethods
