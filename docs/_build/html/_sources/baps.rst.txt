@@ -5,8 +5,8 @@ Biogeographic Analysis Packages
 
 .. contents:: Table of Contents
 
-Overview
-========
+BAP Overview
+============
 
 Biogeographic Analysis Packages are the heart and soul of the National Biogeographic Map. Fundamentally, we are building a scientifically robust decision analysis platform focused through the lens of a national map. At the root of this are discrete analytical workflows that leverage a variety of data sources to examine particular issues of importance to resource management and policy making challenges.  We call these foundational units "packages" to denote a method for putting the process and results of our analyses into a cohesive construct that can be explained, reviewed, deployed into a variety of venues (including but not limited to the National Biogeographic Map), and built upon by us and others. We will continue to evolve the BAP concept and will keep this documentation up to date with the latest developments and method descriptions.
 
@@ -35,7 +35,7 @@ We are still working out our process for how we conduct the analytical process. 
 Organization and Navigation
 ---------------------------
 
-For now, we are usgs-bis GitHub organization with repos flagged to the topic, "`analysis-package <https://github.com/search?q=topic%3Aanalysis-package+org%3Ausgs-bis&type=Repositories>`_", as the way in which Analysis Packages make their official online debut. We are using the GitHub API to pull information on the repos in this category to evaluate capability maturity of the packages and drive different types of representations (e.g., through the National Biogeographic Map).
+For now, we are usgs-bis GitHub organization with repos flagged to the topic, "`analysis-package <https://github.com/search?utf8=%E2%9C%93&q=topic%3Aanalysis-package+org%3Ausgs-bis+fork%3Atrue&type=Repositories>`_", as the way in which Analysis Packages make their official online debut. We are using the GitHub API to pull information on the repos in this category to evaluate capability maturity of the packages and drive different types of representations (e.g., through the National Biogeographic Map). Eventually, we will have a more sophisticated method of querying for specific analysis packages appropriate for a given version of the National Biogeographic Map or other applications, but for now we are also including a topic that flags those BAPs with a `presence in the NBM <https://github.com/search?utf8=%E2%9C%93&q=topic%3Aanalysis-package+topic%3Anbm+org%3Ausgs-bis+fork%3Atrue&type=Repositories>`_.
 
 Issues and Labels
 -----------------
