@@ -1,51 +1,186 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Development Methods &#8212; National Biogeographic Map 2.0.1 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '2.0.1',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Development Methods &mdash; National Biogeographic Map 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="References Cited" href="references.html" />
-    <link rel="prev" title="Biogeographic Analysis Packages" href="baps.html" />
+    <link rel="next" title="History of the National Biogeographic Map" href="history.html" />
+    <link rel="prev" title="Biogeographic Analysis Packages" href="baps.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
    
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  <div class="wy-grid-for-nav">
 
-  </head>
-  <body>
-  
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+          
+            <a href="index.html" class="icon icon-home"> National Biogeographic Map
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bis.html">Biogeographic Information System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="baps.html">Biogeographic Analysis Packages</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Development Methods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#philosophy">Philosophy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#shareable-code">Shareable Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#buildable-code">Buildable Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#contributability">“Contributability”</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conversation">Conversation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#helper-functions">Helper Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-management">Data Management</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#practical">Practical</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#personal-bcb-lab-bis">Personal –&gt; BCB (lab) –&gt; BIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#readme">README</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#license">LICENSE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#branching-and-pull-requests">Branching and Pull Requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usgs-fundamental-science-practices">USGS Fundamental Science Practices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History of the National Biogeographic Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References Cited</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">National Biogeographic Map</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Development Methods</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/devmethods.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
             
   <div class="section" id="development-methods">
 <span id="devmethods"></span><h1><a class="toc-backref" href="#id1">Development Methods</a><a class="headerlink" href="#development-methods" title="Permalink to this headline">¶</a></h1>
 <div class="contents topic" id="table-of-contents">
 <p class="topic-title first">Table of Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#development-methods" id="id1">Development Methods</a></li>
+<li><a class="reference internal" href="#development-methods" id="id1">Development Methods</a><ul>
 <li><a class="reference internal" href="#philosophy" id="id2">Philosophy</a><ul>
 <li><a class="reference internal" href="#shareable-code" id="id3">Shareable Code</a></li>
 <li><a class="reference internal" href="#buildable-code" id="id4">Buildable Code</a></li>
@@ -63,139 +198,137 @@
 <li><a class="reference internal" href="#readme" id="id12">README</a></li>
 <li><a class="reference internal" href="#license" id="id13">LICENSE</a></li>
 <li><a class="reference internal" href="#branching-and-pull-requests" id="id14">Branching and Pull Requests</a></li>
+<li><a class="reference internal" href="#usgs-fundamental-science-practices" id="id15">USGS Fundamental Science Practices</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
-</div>
 <div class="section" id="philosophy">
-<h1><a class="toc-backref" href="#id2">Philosophy</a><a class="headerlink" href="#philosophy" title="Permalink to this headline">¶</a></h1>
+<h2><a class="toc-backref" href="#id2">Philosophy</a><a class="headerlink" href="#philosophy" title="Permalink to this headline">¶</a></h2>
 <p>Scientific analysis can be done in a wide variety of ways using many different tools. We expect that the analyses that we “adopt” or consider to be part of our Biogeographic Information System framework as <a class="reference internal" href="baps.html#baps"><span class="std std-ref">Biogeographic Analysis Packages</span></a> will be developed in a variety of different tools, using a variety of methods and techniques, and resulting in many different ways of looking at problems of interest. However, we do see the need to develop, test, and refine a set of core principles, approaches, and overarching methods that we will adopt across the board. These should put some useful sideboards on our work, providing the basic mechanics for how certain things are done so that we can all concentrate on the more important substance of the scientific analytical work itself.</p>
 <div class="section" id="shareable-code">
-<h2><a class="toc-backref" href="#id3">Shareable Code</a><a class="headerlink" href="#shareable-code" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id3">Shareable Code</a><a class="headerlink" href="#shareable-code" title="Permalink to this headline">¶</a></h3>
 <p>We do feel strongly that all of our analyses need to be in the form of shareable code. Other people need to see exactly what we are doing and an instantiation of our scientific thought process both to provide transparency into our methods and sources and to help accelerate the pace of new analytical work by providing ready building blocks. The code can be in many different forms and languages, but it needs to be in some form that can be shared with others.</p>
 </div>
 <div class="section" id="buildable-code">
-<h2><a class="toc-backref" href="#id4">Buildable Code</a><a class="headerlink" href="#buildable-code" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id4">Buildable Code</a><a class="headerlink" href="#buildable-code" title="Permalink to this headline">¶</a></h3>
 <p>Code can be shareable without being particularly buildable; we want our code to be buildable by others. What we mean by buildable is the ability to quickly pick up one set of code or a particular algorithm within code and use it to build something else. If there are dependencies within a Biogeographic Analysis Package that are out of reach for someone, then that package is not buildable. We will work on methods and practices across our various coding platforms and traditions to instantiate clear indications of requirements within our Analysis Packages, ensuring through testing that they can all be met by someone interested in building on what we’ve done.</p>
 </div>
 <div class="section" id="contributability">
-<h2><a class="toc-backref" href="#id5">“Contributability”</a><a class="headerlink" href="#contributability" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id5">“Contributability”</a><a class="headerlink" href="#contributability" title="Permalink to this headline">¶</a></h3>
 <p>Analysis Packages are not just made up of core scientific code doing the actual analysis. They also have documentation, conversation, helper functions, and data management. Our intent is to operate a platform that accepts and celebrates all of these contributions. Below are a few thoughts on how we are working for these specific types of contributions to play out in practice.</p>
 <div class="section" id="documentation">
-<h3><a class="toc-backref" href="#id6">Documentation</a><a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
+<h4><a class="toc-backref" href="#id6">Documentation</a><a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h4>
 <p>Documentation for an Analysis Package happens at a number of levels. There are core metadata that describe the purpose of an analysis and provide instructions for use. There may be additional documents that help to further understand the analysis, how it can be used, and perhaps how it should not be used. There are also inline comments within the code that help to understand how certain functions are meant to perform or what a workflow entails. Our intent is that documentation of our analyses is a team effort, with multiple people from across our group able to jump in and help work on the documentation for any analysis.</p>
 </div>
 <div class="section" id="conversation">
-<h3><a class="toc-backref" href="#id7">Conversation</a><a class="headerlink" href="#conversation" title="Permalink to this headline">¶</a></h3>
+<h4><a class="toc-backref" href="#id7">Conversation</a><a class="headerlink" href="#conversation" title="Permalink to this headline">¶</a></h4>
 <p>The very nature of science is that it is always in flux. Our understanding of anything at any given time is always incomplete, waiting for the next discovery or perspective to disrupt and further previous understanding. We expect our Analysis Packages to capture and foster ongoing conversation within and beyond our team, and with both other scientists and resource management stakeholders. We will work on ways to make these conversations as productive as possible by keeping them pointed toward specific aspects of our analyses. We will make best use of available technologies over time such as issue tracking in GitHub and GitLab to make the conversation a core part of the overall analytical record.</p>
 </div>
 <div class="section" id="helper-functions">
-<h3><a class="toc-backref" href="#id8">Helper Functions</a><a class="headerlink" href="#helper-functions" title="Permalink to this headline">¶</a></h3>
+<h4><a class="toc-backref" href="#id8">Helper Functions</a><a class="headerlink" href="#helper-functions" title="Permalink to this headline">¶</a></h4>
 <p>The nature of building scientific software or any type of code is one of putting building blocks together. These can be in the form of Python Packages or R Libraries or any number of other types of packaging. We use libraries from the larger community and from within our own group. We’ve already seen the need to start developing specific packages of functions in common across the Biogeographic Information System and have launched the pyBIS project to contain one form of these functions for common use. As we develop each of our Analysis Packages, we will look for opportunities to improve upon or build new tools into our overall toolbox in an appropriate language. We will strive for a healthy iterative approach where the lead author of a particular analysis may flag some part of their code for further examination by someone else on the team with the expertise to build out a particular function in the best way possible.</p>
 </div>
 <div class="section" id="data-management">
-<h3><a class="toc-backref" href="#id9">Data Management</a><a class="headerlink" href="#data-management" title="Permalink to this headline">¶</a></h3>
+<h4><a class="toc-backref" href="#id9">Data Management</a><a class="headerlink" href="#data-management" title="Permalink to this headline">¶</a></h4>
 <p>One of the key aspects of making buildable code is to make the leap from offline to online data. If a set of analytical code has references to data sitting on the lead author’s local machine, someone else can’t meet that particular dependency without somehow getting those same data onto their own local machine and then changing the path. Each of the data input dependencies to our analyses needs some level of careful examination to determine the best pathway for the data to be made accessible and long-lived so that the analysis is buildable and sustainable. The lead author may not always know the best way of getting this done, but there’s a good chance that someone else on our team will know how to take at least the first step.</p>
 </div>
 </div>
 </div>
 <div class="section" id="practical">
-<h1><a class="toc-backref" href="#id10">Practical</a><a class="headerlink" href="#practical" title="Permalink to this headline">¶</a></h1>
+<h2><a class="toc-backref" href="#id10">Practical</a><a class="headerlink" href="#practical" title="Permalink to this headline">¶</a></h2>
 <p>In the near term, there are a number of ways the philosophical development approach can be achieved in practical terms given the platforms we are choosing to operate on at the moment. The following are some practices we are working to develop and employ in the GitHub environment.</p>
 <div class="section" id="personal-bcb-lab-bis">
-<h2><a class="toc-backref" href="#id11">Personal –&gt; BCB (lab) –&gt; BIS</a><a class="headerlink" href="#personal-bcb-lab-bis" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id11">Personal –&gt; BCB (lab) –&gt; BIS</a><a class="headerlink" href="#personal-bcb-lab-bis" title="Permalink to this headline">¶</a></h3>
 <p>We are working under some longstanding permission from within our particular USGS Science Center to develop much of what we do that is not new science in GitHub in the open, potentially starting under a person account but moving into one of the two GitHub Orgs we set up. We will be working to formalize this a little bit, but the current accepted practice is to include the <a class="reference external" href="https://www2.usgs.gov/fsp/fsp_disclaimers.asp#11">USGS Provisional Software Disclaimer Statement</a> in the LICENSE and README of a repository unless and until the software goes through formal review and release.</p>
 <p>Personal account repos may be the starting place for many analyses until we are ready to spin it up as part of our lab space (<a class="reference external" href="https://github.com/usgs-bcb">https://github.com/usgs-bcb</a>). We may sometimes immediately start up a repo under our <a class="reference external" href="https://github.com/usgs-bis">Biogeographic Information System org</a> or we may move a repo to this location at some point in its lifecycle as we progress toward an official release and incorporation into the BIS.</p>
 </div>
 <div class="section" id="readme">
-<h2><a class="toc-backref" href="#id12">README</a><a class="headerlink" href="#readme" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id12">README</a><a class="headerlink" href="#readme" title="Permalink to this headline">¶</a></h3>
 <p>At a minimum, the expectation is that every repository has at least a README containing core documentation for the Analysis Package or other component. We will keep working over time on methods for leveraging structured information in the README and linked documentation. READMEs and other docs should be written in reStructuredText (preferred) or Markdown. This is the first place people will look for information on what the package is and what it does, so write a good readme.</p>
 </div>
 <div class="section" id="license">
-<h2><a class="toc-backref" href="#id13">LICENSE</a><a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id13">LICENSE</a><a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h3>
 <p>Everything that our lab produces is done either by US Government Federal staff or by university cooperators who are generally working under the same guidelines where our work cannot be copyrighted and must be released into the public domain (inherently unlicensed). Projects in GitHub and elsewhere have established a convention for this kind of work using the <a class="reference external" href="http://unlicense.org">unlicense</a>. We tweaked the standard unlicense text slightly to include the USGS provisional software disclaimer but may need to revisit as that changes the dynamic for how GitHub evaluates the standard license designation for a repository.</p>
 </div>
 <div class="section" id="branching-and-pull-requests">
-<h2><a class="toc-backref" href="#id14">Branching and Pull Requests</a><a class="headerlink" href="#branching-and-pull-requests" title="Permalink to this headline">¶</a></h2>
+<h3><a class="toc-backref" href="#id14">Branching and Pull Requests</a><a class="headerlink" href="#branching-and-pull-requests" title="Permalink to this headline">¶</a></h3>
 <p>We are using the git methods of branching and pull requests with the additional GitHub features of review and threaded discussion to good effect within <a class="reference external" href="https://github.com/usgs-bcb">https://github.com/usgs-bcb</a> and <a class="reference external" href="https://github.com/usgs-bis">https://github.com/usgs-bis</a>. We ask that all contributors create a branch for a particular piece of work (preferably in small chunks), commit files in the branch, and issue a pull request. That sets up the contribution such that it can be reviewed, commented on, and either accepted or rejected into the particular project. If we know who else on the team would be good to review our contribution, we add them as a reviewer via GitHub. Reviewers comment on the approach or other substance of the contribution and either accept it or indicate that it should not be accepted. Right now, anyone with permissions in a given repo (generally our entire team) has the ability to merge a pull request or handle issues like collisions between branches. Some projects may eventually require a little more management rigor, and we’ll be exploring continuous integration tools once we get some better testing rigor in place.</p>
 </div>
+<div class="section" id="usgs-fundamental-science-practices">
+<h3><a class="toc-backref" href="#id15">USGS Fundamental Science Practices</a><a class="headerlink" href="#usgs-fundamental-science-practices" title="Permalink to this headline">¶</a></h3>
+<p>Biogeographic Analysis Packages and all of the software components of the Biogeographic Information System are generally either Software Release or Data Release type products in terms of USGS policy guidance. As such we take everything through an appropriate level of review and approval. When and how this happens is somewhat dependent on the nature of the component and the type of review and scrutiny it needs. Scientific analyses encapsulated as <a class="reference internal" href="baps.html#baps"><span class="std std-ref">Biogeographic Analysis Packages</span></a> often require a different type of review looking at the scientific method basis for the analysis than other aspects of the infrastructure. Work that results in new data being built may follow a Data Release pathway if that is the primary aspect of that work even when the Data Release package may include software as well as the data themselves.</p>
+<p>Part of the reason that we emphasize the need to include scientific article citations in <a class="reference internal" href="baps.html#inputs"><span class="std std-ref">Inputs</span></a> has to do with the way Data Release and Software Release types of products are treated under USGS FSP. Both are characterized as inherently non-interpretive meaning that any scientific methods that are employed in their production must reference previously peer reviewed literature from a journal article or interpretive USGS Series Publication.</p>
+<p>To track reviews, at least the initial version of a new BAP or other software/data component needs to be run through the USGS Information Product Data System (IPDS) as the appropriate product type. IPDS will facilitate capture of any review artifacts such as marked up parts of code documentation or other ways that the review version of the component is commented on along with review comment reconciliation. It will track author, supervisor, and Center Director review and sign-off steps. Depending on the substance of the review and what the documentation says about future iterations, subsequent minor revisions may not need to go through another formal review, but major revisions should be reviewed again if they deviate significantly from the last review checkpoint.</p>
+<p>As described above, we do put out provisional software and data components with the appropriate provisional disclaimer language included when they are based on or working with already released USGS or public data and do not trigger the “<a class="reference external" href="https://www2.usgs.gov/fsp/interpretive_definitions_and_examples.asp">interpretive science</a>” threshold. This is essentially a USGS method of characterizing different types of information products in a way that determines the type of review and approval.</p>
+</div>
+</div>
 </div>
 
 
+           </div>
+           
           </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="history.html" class="btn btn-neutral float-right" title="History of the National Biogeographic Map" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="baps.html" class="btn btn-neutral" title="Biogeographic Analysis Packages" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">National Biogeographic Map</a></h1>
+
+    </section>
+
+  </div>
+  
 
 
+  
 
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
 
+  
 
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
 
-
-<h3>Navigation</h3>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="history.html">History of the National Biogeographic Map</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bis.html">Biogeographic Information System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="baps.html">Biogeographic Analysis Packages</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Development Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#philosophy">Philosophy</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#shareable-code">Shareable Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#buildable-code">Buildable Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#contributability">“Contributability”</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#practical">Practical</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#personal-bcb-lab-bis">Personal –&gt; BCB (lab) –&gt; BIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#readme">README</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#license">LICENSE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#branching-and-pull-requests">Branching and Pull Requests</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="references.html">References Cited</a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="baps.html" title="previous chapter">Biogeographic Analysis Packages</a></li>
-      <li>Next: <a href="references.html" title="next chapter">References Cited</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="_sources/devmethods.rst.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  </body>
+</body>
 </html>

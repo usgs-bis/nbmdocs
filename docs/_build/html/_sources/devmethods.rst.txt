@@ -6,7 +6,7 @@ Development Methods
 .. contents:: Table of Contents
 
 Philosophy
-**********
+==========
 
 Scientific analysis can be done in a wide variety of ways using many different tools. We expect that the analyses that we "adopt" or consider to be part of our Biogeographic Information System framework as :ref:`baps` will be developed in a variety of different tools, using a variety of methods and techniques, and resulting in many different ways of looking at problems of interest. However, we do see the need to develop, test, and refine a set of core principles, approaches, and overarching methods that we will adopt across the board. These should put some useful sideboards on our work, providing the basic mechanics for how certain things are done so that we can all concentrate on the more important substance of the scientific analytical work itself.
 
@@ -46,7 +46,7 @@ Data Management
 One of the key aspects of making buildable code is to make the leap from offline to online data. If a set of analytical code has references to data sitting on the lead author's local machine, someone else can't meet that particular dependency without somehow getting those same data onto their own local machine and then changing the path. Each of the data input dependencies to our analyses needs some level of careful examination to determine the best pathway for the data to be made accessible and long-lived so that the analysis is buildable and sustainable. The lead author may not always know the best way of getting this done, but there's a good chance that someone else on our team will know how to take at least the first step.
 
 Practical
-*********
+=========
 
 In the near term, there are a number of ways the philosophical development approach can be achieved in practical terms given the platforms we are choosing to operate on at the moment. The following are some practices we are working to develop and employ in the GitHub environment.
 
@@ -72,3 +72,13 @@ Branching and Pull Requests
 
 We are using the git methods of branching and pull requests with the additional GitHub features of review and threaded discussion to good effect within https://github.com/usgs-bcb and https://github.com/usgs-bis. We ask that all contributors create a branch for a particular piece of work (preferably in small chunks), commit files in the branch, and issue a pull request. That sets up the contribution such that it can be reviewed, commented on, and either accepted or rejected into the particular project. If we know who else on the team would be good to review our contribution, we add them as a reviewer via GitHub. Reviewers comment on the approach or other substance of the contribution and either accept it or indicate that it should not be accepted. Right now, anyone with permissions in a given repo (generally our entire team) has the ability to merge a pull request or handle issues like collisions between branches. Some projects may eventually require a little more management rigor, and we'll be exploring continuous integration tools once we get some better testing rigor in place.
 
+USGS Fundamental Science Practices
+----------------------------------
+
+Biogeographic Analysis Packages and all of the software components of the Biogeographic Information System are generally either Software Release or Data Release type products in terms of USGS policy guidance. As such we take everything through an appropriate level of review and approval. When and how this happens is somewhat dependent on the nature of the component and the type of review and scrutiny it needs. Scientific analyses encapsulated as :ref:`baps` often require a different type of review looking at the scientific method basis for the analysis than other aspects of the infrastructure. Work that results in new data being built may follow a Data Release pathway if that is the primary aspect of that work even when the Data Release package may include software as well as the data themselves.
+
+Part of the reason that we emphasize the need to include scientific article citations in :ref:`Inputs` has to do with the way Data Release and Software Release types of products are treated under USGS FSP. Both are characterized as inherently non-interpretive meaning that any scientific methods that are employed in their production must reference previously peer reviewed literature from a journal article or interpretive USGS Series Publication.
+
+To track reviews, at least the initial version of a new BAP or other software/data component needs to be run through the USGS Information Product Data System (IPDS) as the appropriate product type. IPDS will facilitate capture of any review artifacts such as marked up parts of code documentation or other ways that the review version of the component is commented on along with review comment reconciliation. It will track author, supervisor, and Center Director review and sign-off steps. Depending on the substance of the review and what the documentation says about future iterations, subsequent minor revisions may not need to go through another formal review, but major revisions should be reviewed again if they deviate significantly from the last review checkpoint.
+
+As described above, we do put out provisional software and data components with the appropriate provisional disclaimer language included when they are based on or working with already released USGS or public data and do not trigger the "`interpretive science <https://www2.usgs.gov/fsp/interpretive_definitions_and_examples.asp>`_" threshold. This is essentially a USGS method of characterizing different types of information products in a way that determines the type of review and approval.
