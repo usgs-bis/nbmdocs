@@ -2,7 +2,7 @@ USGS National Biogeographic Map
 *******************************
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    releasenotes
    bis
@@ -10,6 +10,7 @@ USGS National Biogeographic Map
    devmethods
    history
    references
+   browse
 
 Overview
 ==========

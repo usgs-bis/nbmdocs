@@ -38,14 +38,39 @@ As we've worked through this and other registry concepts, we've come to determin
 Libraries
 ---------
 
-Coming soon...
+Some of the resources we are building are more permanent data or information that need to be persisted over time. We are currently referring to these as "Libraries." This is somewhat a philosophical statement on how we would like to think about digital library resources and a partnership we are working to forge with our USGS Library organization. These digital asset pools we are creating have a few characteristics in common with many other libraries.
+
+* Curation of the resources in the libraries is a key feature. Users can count on a certain level of rigor applied to the metadata and condition of the resources for use.
+* The libraries contain a mix of original materials not found anywhere else and copies of materials borrowed from other places and assembled for ease of access.
+* Cross referencing is a major part of the curatorial process to help add value to the materials in any given library.
+* Openness, transparency, and traceability are core values that we ascribe to in order to make the resources found in our libraries more understandable and trustworthy
 
 Data Reference Library
 ~~~~~~~~~~~~~~~~~~~~~~
 
+Our analytical processes and products use a lot of data that are either originated by us, integrated and enhanced by us for particular uses, or are referenced from other sources. It is important that we keep track of all of this over time, apply data management best practices to our own works and the documentation of works from others, and clearly tie our analytical workflows to particular versions of data through time. We've started assembling our `Data Reference Library <https://www.sciencebase.gov/catalog/item/5644f3c1e4b0aafbcd0188f1>`_ as a collection in ScienceBase, but it is one of our early components that needs a fair bit of work in cleanup and practice development.
+
 Research Reference Library
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We also base our work and pull specific information from many different reference materials that range from scientific journal articles to government reports and online materials. Similar to the Data Reference Library, it is important for us to have a curated source of research references that we can count on over time, especially with more transient materials that may not always be available from the location we found them. We are developing the idea for and an instantiation of a Research Reference Library in a new data model that will consist of a document store based on the schema.org/article specification and a cloud file store for materials we need to stash. To start with, we are building from several existing stores of this type of information that need to come together into something more cohesive.
+
+* GAP species literature references
+* US National Vegetation Classification literature references
+* Dam Removal Science Database literature references
+
+In addition to these, we are judiciously working with several partners who share an affinity with this idea on incorporating a few other sources.
+
+Included in the Research Reference Library concept is the idea of a micro-citation or a smaller piece of a fundamental citable unit that is the subject of a particular reference. There is much research in the broader world of informatics and library science on this topic we are paying attention to, but we have an immediate practical need to record and reference micro-citations from which we are extracting data attributes across a number of our projects.
 
 Software Reference Library
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Our analysis activities also result in the need for a Software Reference Library consisting of both our own original works and the various software dependencies that our work generates over time. We are still working out what all this practice will consist of and the rules for operating this component of the BIS, but we are working to identify and adopt best appropriate practices from software engineering in this work. This ranges from our own software development practices using git methods with both GitHub and GitLab (internally) to declaring and managing software requirements in our code and leveraging technologies like Docker to cache some of those dependencies within the Library.
+
+We consider the following two GitHub organizations to be primary entry points to the Software Reference Library:
+
+* https://github.com/usgs-bcb Lab space for experimental works
+* https://github.com/usgs-bis More curated space for major software components of the BIS
+
+In addition, we maintain a GitLab space within the secure part of code.usgs.gov and a group there for software projects that require temporary or permanent security controls.
