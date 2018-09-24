@@ -5,6 +5,7 @@ USGS National Biogeographic Map
    :maxdepth: 1
 
    releasenotes
+   maptool
    bis
    baps
    devmethods

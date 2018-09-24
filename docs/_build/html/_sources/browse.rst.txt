@@ -7,6 +7,7 @@ Browse Contents
    :maxdepth: 5
 
    releasenotes
+   maptool
    bis
    baps
    devmethods
