@@ -3,20 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b9b88fdf-361d-4de9-bd1d-ce08ca37ce3e" name="Default" comment="Added release notes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/baps.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/baps.doctree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/doctrees/releasenotes.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/doctrees/releasenotes.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/baps.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/baps.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/_sources/releasenotes.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/_sources/releasenotes.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/baps.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/baps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/browse.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/browse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_build/html/releasenotes.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/releasenotes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/baps.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/baps.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/releasenotes.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/releasenotes.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/maptool.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/maptool.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +18,13 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,7 +32,7 @@
           <entry key="Makefile" value="1" />
           <entry key="md" value="1" />
           <entry key="py" value="4" />
-          <entry key="rst" value="16" />
+          <entry key="rst" value="18" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
@@ -47,29 +41,39 @@
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="4" />
-          <entry key="ReST" value="16" />
+          <entry key="ReST" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="py" value="93" />
-          <entry key="rst" value="7782" />
-          <entry key="txt" value="103" />
+          <entry key="rst" value="11605" />
+          <entry key="txt" value="173" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="103" />
+          <entry key="PLAIN_TEXT" value="173" />
           <entry key="Python" value="93" />
-          <entry key="ReST" value="7782" />
+          <entry key="ReST" value="11605" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/releasenotes.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/maptool.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/browse.rst">
           <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
@@ -136,11 +140,13 @@
         <option value="$PROJECT_DIR$/docs/references.rst" />
         <option value="$PROJECT_DIR$/docs/conf.py" />
         <option value="$PROJECT_DIR$/docs/devmethods.rst" />
-        <option value="$PROJECT_DIR$/docs/browse.rst" />
         <option value="$PROJECT_DIR$/docs/history.rst" />
-        <option value="$PROJECT_DIR$/docs/index.rst" />
         <option value="$PROJECT_DIR$/docs/baps.rst" />
         <option value="$PROJECT_DIR$/docs/releasenotes.rst" />
+        <option value="$PROJECT_DIR$/docs/nbm.rst" />
+        <option value="$PROJECT_DIR$/docs/index.rst" />
+        <option value="$PROJECT_DIR$/docs/browse.rst" />
+        <option value="$PROJECT_DIR$/docs/maptool.rst" />
       </list>
     </option>
   </component>
@@ -151,10 +157,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2561" />
+    <option name="x" value="-44" />
     <option name="y" value="23" />
-    <option name="width" value="2310" />
-    <option name="height" value="1376" />
+    <option name="width" value="1475" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -274,15 +280,22 @@
       <option name="project" value="LOCAL" />
       <updated>1536775718772</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added page on the maptool and updated references, rebuilt html">
+      <created>1537816775158</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1537816775158</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2561" y="23" width="2310" height="1376" extended-state="0" />
+    <frame x="-44" y="23" width="1475" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3863109" visible="true" weight="0.2813051" />
-      <window_info id="Structure" order="1" sideWeight="0.6136891" side_tool="true" visible="true" weight="0.2813051" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3847619" visible="true" weight="0.26727146" />
+      <window_info id="Structure" order="1" sideWeight="0.6152381" side_tool="true" visible="true" weight="0.26727146" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -292,7 +305,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49964765" visible="true" weight="0.32866043" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49964765" visible="true" weight="0.3277849" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32969698" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003524" side_tool="true" weight="0.3260606" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -319,7 +332,8 @@
     <MESSAGE value="Added LICENSE" />
     <MESSAGE value="New content in dev methods, release notes, and new style for HTML build" />
     <MESSAGE value="Added release notes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added release notes" />
+    <MESSAGE value="Added page on the maptool and updated references, rebuilt html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added page on the maptool and updated references, rebuilt html" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/LICENSE" />
@@ -327,13 +341,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/usgs-bis-labels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/Makefile">
       <provider selected="true" editor-type-id="text-editor" />
@@ -346,15 +354,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/references.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="450" selection-start-line="3" selection-start-column="417" selection-end-line="3" selection-end-column="450" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/browse.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -367,42 +372,48 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/history.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state>
           <caret line="7" column="168" selection-start-line="7" selection-start-column="168" selection-end-line="7" selection-end-column="168" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/bis.rst">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/docs/baps.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.rst">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/devmethods.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/browse.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/baps.rst">
-      <provider editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/docs/bis.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/releasenotes.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/maptool.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>

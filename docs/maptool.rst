@@ -30,7 +30,7 @@ Locations/Places
 
 One of the primary modes of operating in the NBM interface is to select an area of interest through one of the following mechanisms:
 
-* Search for a place of interest in the box in the upper left; uses a type ahead to provide a list of available places
+* Search for a place of interest in the box in the upper left; uses a type ahead to provide a list of available places (:ref:`Spatial Feature Registry`)
 * Click in the map somewhere, and then select a place from the list in the search box
 * Draw a polygon using the draw tool in the upper right corner of the map
 
