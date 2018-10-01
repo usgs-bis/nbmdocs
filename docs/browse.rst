@@ -9,6 +9,7 @@ Browse Contents
    releasenotes
    maptool
    bis
+   sfr
    baps
    devmethods
    history

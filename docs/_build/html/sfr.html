@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Spatial Feature Registry &mdash; National Biogeographic Map 2.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> National Biogeographic Map
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="releasenotes.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maptool.html">National Biogeographic Map - the map tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bis.html">Biogeographic Information System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="baps.html">Biogeographic Analysis Packages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devmethods.html">Development Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History of the National Biogeographic Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References Cited</a></li>
+<li class="toctree-l1"><a class="reference internal" href="browse.html">Browse Contents</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">National Biogeographic Map</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Spatial Feature Registry</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/sfr.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="spatial-feature-registry">
+<span id="sfr"></span><h1><a class="toc-backref" href="#id1">Spatial Feature Registry</a><a class="headerlink" href="#spatial-feature-registry" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="table-of-contents">
+<p class="topic-title first">Table of Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#spatial-feature-registry" id="id1">Spatial Feature Registry</a><ul>
+<li><a class="reference internal" href="#sfr-registration" id="id2">SFR Registration</a></li>
+<li><a class="reference internal" href="#sfr-processing" id="id3">SFR Processing</a></li>
+<li><a class="reference internal" href="#example-place-name-index" id="id4">Example: Place Name Index</a><ul>
+<li><a class="reference internal" href="#feature-id" id="id5">feature_id</a></li>
+<li><a class="reference internal" href="#feature-class" id="id6">feature_class</a></li>
+<li><a class="reference internal" href="#feature-name" id="id7">feature_name</a></li>
+<li><a class="reference internal" href="#feature-description" id="id8">feature_description</a></li>
+<li><a class="reference internal" href="#source-data" id="id9">source_data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<p>The Spatial Feature Registry is a core component of the Biogeographic Information System used to manage the process of bringing spatiotemporal features of interest into the system in various ways for analysis, reference, and reporting. This page lays out the overall approach we are taking to build this component.</p>
+<div class="section" id="sfr-registration">
+<h2><a class="toc-backref" href="#id2">SFR Registration</a><a class="headerlink" href="#sfr-registration" title="Permalink to this headline">¶</a></h2>
+<p>We are using ScienceBase as the point of registration for collections of features that we want to integrate for use. This gives us a flexible information model for capturing details about the source material, a repository to store file artifacts as necessary, and an API for building processing code against. What it doesn’t yet do for us dynamically is provide a built in versioning system such that we have one logical item for a given source that represents and provides access to different versions of the source material over time. We still need to work out the best solution for this particular dynamic.</p>
+<p>There are a number of core principles that we are continuing to develop for what the point of registration means:</p>
+<ul class="simple">
+<li>Characterize the origin - We need to record enough information about the origin that we can manage the source over time. This includes details on organization and person contacts, links to online sources and informational material, and important dates associated with the source (when it was considered current by the source, when we last obtained the source material, etc.).</li>
+<li>File cache - We try to look at every source with a critical eye as to its projected longevity and any problems we foresee in the source being maintained over time. We also look at the actual point of distribution to determine whether or not it will be performant enough for the type of processing we need to run. If there is an indication of brittleness or lack of performance, we will stash a file of some kind on the ScienceBase Item that is either exactly what the source provides or is run through a set of transparent processing logic to turn it into something we can use.</li>
+</ul>
+</div>
+<div class="section" id="sfr-processing">
+<h2><a class="toc-backref" href="#id3">SFR Processing</a><a class="headerlink" href="#sfr-processing" title="Permalink to this headline">¶</a></h2>
+<p>Once we have a set of manageable registered sources, we can build processing code to work with the data in a variety of ways. We are currently building out logic that handles the following operations:</p>
+<ul class="simple">
+<li>Pre-processing - If we do anything to source data to set them up for our use before running them through a pipeline to bring them into our platform, we do that with code in source control that is linked to from the ScienceBase Item. We are working iteratively to improve this over time, moving from purpose-built individual scripts to overarching processing logic in our core “pybis” package. If there are particular configuration parameters or processing logs produced as part of a pre-processing step, these are either stored in source control and linked to the ScienceBase Item or stashed on the ScienceBase Item with the data.</li>
+<li>Data mobilization - In our current iteration of the SFR concept, we are finding that there is a certain amount of additional data processing and prep work needed that can take advantage of the data being loaded in pretty much their raw or minimally pre-processed form into PostGIS. This means that there is additional processing logic run against the data to tee them up for broader use in our systems. This can include transformations in the geometry, logical combinations of features, and other processes encoded in SQL. These codes also need to be made open and transparent somewhere that is linked to the original sources and to forms of the data put online for use in the BIS API.</li>
+<li>Purpose-built indexes - Once we have data mobilized and have a coherent set of basic usability processing steps in place, we can build out any number of indexes for broader use in the BIS. These indexes are also built with code so that we can show exactly how any given record came to be in our system, where it came from, and what happened to it along the way.</li>
+</ul>
+</div>
+<div class="section" id="example-place-name-index">
+<h2><a class="toc-backref" href="#id4">Example: Place Name Index</a><a class="headerlink" href="#example-place-name-index" title="Permalink to this headline">¶</a></h2>
+<p>We anticipate building a number of specialized indexes over time to serve various purposes. For instance, we are planning a separate index of “removed dams” to serve as the backing for a new version of the Dam Removal Information Portal. Our seminal use case was a place name index built for use in the National Biogeographic Map. This tool is giving us the chance to work through what may be some commonly applied concepts across some or all of the indexes created from the SFR, manifesting as data properties in the index. We are also experimenting with the use of a JSON Schema as a way to document any given schema in the BIS (e.g., rough <a class="reference external" href="https://github.com/usgs-bis/schema-registry/blob/master/sfr-feature.json">schema</a> for the place name index features).</p>
+<div class="section" id="feature-id">
+<h3><a class="toc-backref" href="#id5">feature_id</a><a class="headerlink" href="#feature-id" title="Permalink to this headline">¶</a></h3>
+<p>We need to be able to uniquely call up and refer to any given feature in an index. After some experimentation with various ways of doing this, we opted on a Uniform Resource Name (URN) type of construct where we adopt some meaningful identifier from the source that may be useful in linking to information already tied to that ID and then giving the identifier a classification that puts it in context. In the strictest sense, <a class="reference external" href="https://www.ietf.org/rfc/rfc2141.txt">RFC2141</a> states that a URN is three parts:</p>
+<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">All</span> <span class="n">URNs</span> <span class="n">have</span> <span class="n">the</span> <span class="n">following</span> <span class="n">syntax</span> <span class="p">(</span><span class="n">phrases</span> <span class="n">enclosed</span> <span class="ow">in</span> <span class="n">quotes</span> <span class="n">are</span>
+<span class="n">REQUIRED</span><span class="p">):</span>
+
+                  <span class="o">&lt;</span><span class="n">URN</span><span class="o">&gt;</span> <span class="p">::</span><span class="o">=</span> <span class="s2">&quot;urn:&quot;</span> <span class="o">&lt;</span><span class="n">NID</span><span class="o">&gt;</span> <span class="s2">&quot;:&quot;</span> <span class="o">&lt;</span><span class="n">NSS</span><span class="o">&gt;</span>
+
+<span class="n">where</span> <span class="o">&lt;</span><span class="n">NID</span><span class="o">&gt;</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">Namespace</span> <span class="n">Identifier</span><span class="p">,</span> <span class="ow">and</span> <span class="o">&lt;</span><span class="n">NSS</span><span class="o">&gt;</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">Namespace</span>
+<span class="n">Specific</span> <span class="n">String</span><span class="o">.</span>  <span class="n">The</span> <span class="n">leading</span> <span class="s2">&quot;urn:&quot;</span> <span class="n">sequence</span> <span class="ow">is</span> <span class="n">case</span><span class="o">-</span><span class="n">insensitive</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">Namespace</span> <span class="n">ID</span> <span class="n">determines</span> <span class="n">the</span> <span class="n">_syntactic_</span> <span class="n">interpretation</span> <span class="n">of</span> <span class="n">the</span>
+<span class="n">Namespace</span> <span class="n">Specific</span> <span class="n">String</span> <span class="p">(</span><span class="k">as</span> <span class="n">discussed</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>In our initial foray, we kind of violated this syntax, adding in a logical fourth element to the identifier. As we go back in a future iteration, we’ll correct this to come up with a compliant URN syntax, mostly because we need to start pointing the &lt;NID&gt; aspect of the name to a resolvable vocabulary resource that describes exactly what the context for the identifier signifies. With these two pieces of information, context and a meaningful identifier, we can generate explicit linkages between various pools of information already in existence or processed in some way that are identified by the original identifier. Good examples in our area include US State and County FIPS codes, Omernik Ecoregion Identifiers, and NHD Common Identifiers for watersheds.</p>
+<p>In our next iteration, NID (namespace identifier) will be resolvable to a vocabulary source (expressed through the BIS API) that provides details about the namespace context, what it means, where it comes from, and what it can be used for.</p>
+</div>
+<div class="section" id="feature-class">
+<h3><a class="toc-backref" href="#id6">feature_class</a><a class="headerlink" href="#feature-class" title="Permalink to this headline">¶</a></h3>
+<p>Within a given integrated index or even within a given feature source, we may have one or more classes or categories of features that form useful groupings or search facets for use. These values should be meaningful and useful as name strings but also need to be resolvable to a vocabulary source where further information can be obtained. A rule associated with feature_class is that all feature_name values need to be unique within a given feature_class.</p>
+</div>
+<div class="section" id="feature-name">
+<h3><a class="toc-backref" href="#id7">feature_name</a><a class="headerlink" href="#feature-name" title="Permalink to this headline">¶</a></h3>
+<p>Feature names are the commonly used identifiers for a given feature that are meaningful to users and use cases. They need to be unique within a given feature_class.</p>
+</div>
+<div class="section" id="feature-description">
+<h3><a class="toc-backref" href="#id8">feature_description</a><a class="headerlink" href="#feature-description" title="Permalink to this headline">¶</a></h3>
+<p>In some cases, we have rich descriptive information for a given set of features that can serve for discovery, display, and understanding purposes. Feature descriptions can be any length text string.</p>
+</div>
+<div class="section" id="source-data">
+<h3><a class="toc-backref" href="#id9">source_data</a><a class="headerlink" href="#source-data" title="Permalink to this headline">¶</a></h3>
+<p>In an information system of multiple disparate feature sources, we end up with widely varying schemas containing additional properties for features. Over time, we may incorporate more of these properties into some synthesized, higher level properties. In the near term, we have started simply dumping a data structure with source data into a separate property (object of key/value pairs in JSON) and adding this to the search index to facilitate additional discovery vectors.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
