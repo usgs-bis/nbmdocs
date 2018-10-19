@@ -19,8 +19,8 @@ Much of the information we need to make sense of and work with in the BIS comes 
 * Ability to store one or more files in an accessible repository as a cache of a registrant's content when we need to do so
 * Reasonably robust API for us to write code against to process registrant content into what we need
 
-Spatial Feature Registry
-~~~~~~~~~~~~~~~~~~~~~~~~
+Spatial Feature Registry (Introduction)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Much of our work involves spatial analysis that runs analytics for a set of areas of interest, allowing us to report on the status of biodiversity and various stressors in a variety of ways. Some of the things we register and process are spatial frameworks based on hydrography or ecology and others are more human-centered like political boundaries of different types. While there are lots of reasonable sources for this kind of information, no one of them serves all our needs, and so we built a registry function to identify the best sources that make sense for our work and run code to pull them all together into something cohesive. Right now, our focus is on assembling certain areas of interest into a common index, complete with full geometry where we have it, that can serve as a place name lookup capability. This will then be used to either send geometry off to spatial processors for live analytics or send identifiers of one kind of another to other services to return pre-calculated metrics. These will drive BAPs in our next iteration of the National Biogeographic Map.
 

@@ -7,6 +7,7 @@ USGS National Biogeographic Map
    releasenotes
    maptool
    bis
+   sfr
    baps
    devmethods
    history
